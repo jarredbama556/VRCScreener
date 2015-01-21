@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)dbChoose:(id)sender;
 
 @end
 

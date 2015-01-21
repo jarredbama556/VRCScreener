@@ -14,6 +14,8 @@
 		CB3456F71A70034800DC98FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB3456F61A70034800DC98FD /* Images.xcassets */; };
 		CB3456FA1A70034800DC98FD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB3456F81A70034800DC98FD /* LaunchScreen.xib */; };
 		CB3457061A70034800DC98FD /* VRCScreenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3457051A70034800DC98FD /* VRCScreenerTests.m */; };
+		CB3457101A70036E00DC98FD /* DBChooser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB34570F1A70036E00DC98FD /* DBChooser.framework */; };
+		CB3457131A7003BC00DC98FD /* DBChooser.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = CB3457111A70039300DC98FD /* DBChooser.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		CB3456FF1A70034800DC98FD /* VRCScreenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRCScreenerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB3457041A70034800DC98FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB3457051A70034800DC98FD /* VRCScreenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VRCScreenerTests.m; sourceTree = "<group>"; };
+		CB34570F1A70036E00DC98FD /* DBChooser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DBChooser.framework; path = "../../../Downloads/dropbox-ios-dropins-sdk-1.2.1/DBChooser.framework"; sourceTree = "<group>"; };
+		CB3457111A70039300DC98FD /* DBChooser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DBChooser.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB3457131A7003BC00DC98FD /* DBChooser.bundle in Frameworks */,
+				CB3457101A70036E00DC98FD /* DBChooser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		CB3456DD1A70034700DC98FD = {
 			isa = PBXGroup;
 			children = (
+				CB3457111A70039300DC98FD /* DBChooser.bundle */,
+				CB34570F1A70036E00DC98FD /* DBChooser.framework */,
 				CB3456E81A70034700DC98FD /* VRCScreener */,
 				CB3457021A70034800DC98FD /* VRCScreenerTests */,
 				CB3456E71A70034700DC98FD /* Products */,
@@ -345,6 +353,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jarredalldredge/Downloads/dropbox-ios-dropins-sdk-1.2.1",
+				);
 				INFOPLIST_FILE = VRCScreener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +367,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jarredalldredge/Downloads/dropbox-ios-dropins-sdk-1.2.1",
+				);
 				INFOPLIST_FILE = VRCScreener/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
