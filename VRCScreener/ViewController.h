@@ -10,7 +10,6 @@
 
 @interface ViewController : UIViewController
 
-- (IBAction)dbChoose:(id)sender;
-
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @end
 
